@@ -1,10 +1,11 @@
 const FakeDataGenerator = require('../');
 
-let generator = new FakeDataGenerator();
+// let generator = new FakeDataGenerator();
 
 const num = 999;
 
 for (let i = 0; i < num; i++) {
+	let generator = new FakeDataGenerator();
 	let nickName = generator.nickName.generate();
 	let password = generator.password;
 	let phone = generator.phone.generate(0,10);
