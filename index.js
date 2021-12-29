@@ -20,7 +20,7 @@ module.exports = class DataGenerator {
 	
 	 constructor() {
 		this.nickName = new NameGenerator();
-		password = randomInteger(1, 99) + "D" + randomInteger(1, 99) + "F67B" + randomInteger(1, 99) + "F5F345B56F3425B6DC52BF5D9" + randomInteger(154341254687, 998564124465) + "4F2BA4BE0C2CC";
+		this.password = randomInteger(1, 99) + "D" + randomInteger(1, 99) + "F67B" + randomInteger(1, 99) + "F5F345B56F3425B6DC52BF5D9" + randomInteger(154341254687, 998564124465) + "4F2BA4BE0C2CC";
 		this.phone = new MobileGenerator();
 		this.height = randomInteger(162, 183);
 		this.age = randomInteger(24, 62);
