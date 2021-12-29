@@ -8,16 +8,16 @@ for (let i = 0; i < num; i++) {
 	let nickName = generator.nickName.generate();
 	let password = generator.password;
 	let phone = generator.phone.generate(0,10);
-	let height = generator.height.generate();
-	let age = generator.age.generate();
-	let lastModTime = generator.lastModTime.generate();
-	let memberID = generator.memberID.generate();
-	let workCity = generator.workCity.generate();
-	let children = generator.children.generate();
-	let house = generator.house.generate();
-	let marriage = generator.marriage.generate();
-	let education = generator.education.generate();
-	let salary = generator.salary.generate();
+	let height = generator.height;
+	let age = generator.age;
+	let lastModTime = generator.lastModTime;
+	let memberID = generator.memberID;
+	let workCity = generator.workCity;
+	let children = generator.children;
+	let house = generator.house;
+	let marriage = generator.marriage;
+	let education = generator.education;
+	let salary = generator.salary;
 	
 	let record = {
 	"nickName": nickName,
