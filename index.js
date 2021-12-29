@@ -7,14 +7,15 @@ const house = ["已购房","和家人同住","租房","住在单位宿舍"];
 const marriage = ["未婚","丧偶","离异"];
 const education = ["高中及以下", "大学本科", "大专", "中专"];
 const salary = ["5001-8000元","3000元以下","8001-12000元","3001-5000元"];
-
+const randomInteger = (min, max) => {
+	// получить случайное число от (min-0.5) до (max+0.5)
+	let rand = min - 0.5 + Math.random() * (max - min + 1);
+	return Math.round(rand);
+  }
+  
 module.exports = class DataGenerator {
 
-	randomInteger(min, max) {
-		// получить случайное число от (min-0.5) до (max+0.5)
-		let rand = min - 0.5 + Math.random() * (max - min + 1);
-		return Math.round(rand);
-	  }
+
 	  
 	 
 	
