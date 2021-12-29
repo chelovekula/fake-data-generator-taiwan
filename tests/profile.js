@@ -6,7 +6,7 @@ const num = 999;
 
 for (let i = 0; i < num; i++) {
 	let nickName = generator.nickName.generate();
-	let password = generator.password.generate();
+	let password = generator.password;
 	let phone = generator.phone.generate(0,10);
 	let height = generator.height.generate();
 	let age = generator.age.generate();
